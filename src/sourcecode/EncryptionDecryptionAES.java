@@ -1,11 +1,15 @@
 package sourcecode;
-import java.util.Base64;    
+import java.util.Base64;
+import java.util.Scanner;
 
 import javax.crypto.Cipher;  
 import javax.crypto.KeyGenerator;   
 import javax.crypto.SecretKey;  
 public class EncryptionDecryptionAES {  
-    static Cipher cipher;  
+    static Cipher cipher; 
+    static {
+    	System.out.println("Enter the message: ");
+    }
 
     public static void main(String[] args) throws Exception {
         /* 
@@ -24,9 +28,10 @@ public class EncryptionDecryptionAES {
           padding: ensuring messages are the proper length necessary for certain ciphers 
           mode/padding are not used with stream cyphers.  
          */
+        Scanner scanner = new Scanner(System.in);
         cipher = Cipher.getInstance("AES"); //SunJCE provider AES algorithm, mode(optional) and padding schema(optional)  
 
-        String plainText = "AES Symmetric Encryption Decryption";
+        String plainText = scanner.nextLine();
         System.out.println("Plain Text Before Encryption: " + plainText);
 
         String encryptedText = encrypt(plainText, secretKey);
