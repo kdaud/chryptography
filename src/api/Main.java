@@ -1,4 +1,4 @@
-package org.apache.commons.codec.binary;
+package api;
 
 import javax.crypto.Cipher;
 import javax.crypto.Mac;

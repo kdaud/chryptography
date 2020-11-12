@@ -1,6 +1,6 @@
 
 //package com.packtpub.crypto.section2;
-package codingsecurity;
+package src;
 
 import java.security.SecureRandom;
 import java.util.Base64;
@@ -10,16 +10,15 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import com.packtpub.crypto.Util;
+import api.Util;
 
 /**
- * Symmetric cryptography example for Packt Publishing Cryptography course 2018.
- * Code from an article co-written by Milton Smith (@spoofzu) and Erik Costlow
- * (@costlow) for Java Advent Calendar 2018.
+ * Symmetric cryptography example for Packt Publishing Cryptography course 2018. Code from an
+ * article co-written by Milton Smith (@spoofzu) and Erik Costlow (@costlow) for Java Advent
+ * Calendar 2018.
  *
  * @see https://dzone.com/articles/jdpr-java-data-protection-recommendations
- *
- * @author Erik Costlow
+ * @author Daud Kakumir
  */
 public class SymmetricCode {
 

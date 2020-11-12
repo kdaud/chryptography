@@ -1,4 +1,4 @@
-package codingsecurity;
+package src;
 
 import java.util.Base64;
 import java.util.Scanner;

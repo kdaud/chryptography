@@ -1,8 +1,7 @@
-package com.packtpub.crypto;
+package api;
 
 /**
- *
- * @author Erik Costlow
+ * @author Daud Kakumirizi
  */
 public class Util {
 

@@ -1,12 +1,12 @@
-package org.apache.commons.codec.binary;
+package unit.test;
 
 import java.util.Scanner;
 
-public class Test {
+public class MainTest {
 
 	static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args) throws Exception {
-		AESenc obj = new AESenc();
+		AESencTest obj = new AESencTest();
 		System.out.println(obj.encrypt(scanner.nextLine()));
 		System.out.println(obj.decrypt("my code"));
 		
